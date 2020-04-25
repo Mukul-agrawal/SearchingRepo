@@ -9,4 +9,13 @@ public class LinearSearch {
         }
         return -1;
     }
+
+    public int recursiveLinear(int[] array, int target, int posMin) {
+        if (posMin == array.length)
+            return -1;
+        else if (array[posMin] == target)
+            return array[posMin];
+        else
+            return recursiveLinear(array, target, posMin + 1);
+    }
 }
