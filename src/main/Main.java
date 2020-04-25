@@ -1,5 +1,6 @@
 package main;
 
+import binary.BinarySearch;
 import linear.LinearSearch;
 
 import java.util.Arrays;
@@ -44,6 +45,9 @@ public class Main {
                         break;
                 }
                 break;
+            case 2:
+                BinarySearch binarySearch = new BinarySearch();
+
 
         }
     }
