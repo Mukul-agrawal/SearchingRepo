@@ -19,5 +19,9 @@ public class Main {
         System.out.println("Press 1 for Linear search : ");
         System.out.println("Press 2 for Binary search : ");
         int option = scanner.nextInt();
+        switch (option) {
+            case 1:
+
+        }
     }
 }
