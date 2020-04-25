@@ -7,5 +7,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of elements : ");
         int noOfElements = scanner.nextInt();
+        int[] array = new int[noOfElements];
     }
 }
