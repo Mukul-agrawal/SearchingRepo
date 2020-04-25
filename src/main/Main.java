@@ -35,6 +35,13 @@ public class Main {
                         } else
                             System.out.println("Element is found : " + result);
                         break;
+                    case 2:
+                        result = linearSearch.recursiveLinear(array, search, 0);
+                        if (result == -1) {
+                            System.out.println("Element not found!");
+                        } else
+                            System.out.println("Element is found : " + result);
+                        break;
 
                 }
 
