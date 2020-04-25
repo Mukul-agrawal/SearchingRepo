@@ -8,5 +8,8 @@ public class Main {
         System.out.print("Enter the number of elements : ");
         int noOfElements = scanner.nextInt();
         int[] array = new int[noOfElements];
+        for (int i = 0; i < noOfElements; i++) {
+            array[i] = (int) (Math.random() * 100);
+        }
     }
 }
