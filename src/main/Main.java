@@ -1,5 +1,7 @@
 package main;
 
+import linear.LinearSearch;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,6 +23,7 @@ public class Main {
         int option = scanner.nextInt();
         switch (option) {
             case 1:
+                LinearSearch linearSearch = new LinearSearch();
 
         }
     }
