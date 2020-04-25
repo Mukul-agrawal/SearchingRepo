@@ -24,6 +24,9 @@ public class Main {
         switch (option) {
             case 1:
                 LinearSearch linearSearch = new LinearSearch();
+                System.out.println("Press 1 for simple linear search : ");
+                System.out.println("Press 2 for recursive linear search : ");
+                int linearOption = scanner.nextInt();
 
         }
     }
