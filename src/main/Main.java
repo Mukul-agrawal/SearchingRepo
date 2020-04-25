@@ -42,8 +42,8 @@ public class Main {
                         } else
                             System.out.println("Element is found : " + result);
                         break;
-
                 }
+                break;
 
         }
     }
