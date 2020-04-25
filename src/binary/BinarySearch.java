@@ -12,7 +12,6 @@ public class BinarySearch {
                 return recursiveBinary(array, target, first, mid - 1);
             else if (array[mid] < target)
                 return recursiveBinary(array, target, mid + 1, last);
-
         }
         return -1;
     }
