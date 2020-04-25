@@ -16,5 +16,8 @@ public class Main {
         System.out.println(Arrays.toString(array));
         System.out.print("Enter the element you want to search : ");
         int search = scanner.nextInt();
+        System.out.println("Press 1 for Linear search : ");
+        System.out.println("Press 2 for Binary search : ");
+        int option = scanner.nextInt();
     }
 }
