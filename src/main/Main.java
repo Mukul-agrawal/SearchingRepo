@@ -47,8 +47,13 @@ public class Main {
                 break;
             case 2:
                 BinarySearch binarySearch = new BinarySearch();
-
-
+                Arrays.sort(array);
+                int result = binarySearch.recursiveBinary(array, search, 0, array.length - 1);
+                if (result == -1) {
+                    System.out.println("Element not found!");
+                } else
+                    System.out.println("Element is found : " + result);
+                break;
         }
     }
 }
