@@ -28,6 +28,13 @@ public class Main {
                 System.out.println("Press 2 for recursive linear search : ");
                 int linearOption = scanner.nextInt();
                 switch (linearOption) {
+                    case 1:
+                        int result = linearSearch.linear(array, search);
+                        if (result == -1) {
+                            System.out.println("Element not found!");
+                        } else
+                            System.out.println("Element is found : " + result);
+                        break;
 
                 }
 
