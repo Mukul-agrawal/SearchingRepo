@@ -1,6 +1,7 @@
 package main;
 
 import binary.BinarySearch;
+import exponential.ExponentialSearch;
 import interpolation.InterpolationSearch;
 import jump.JumpSearch;
 import linear.LinearSearch;
@@ -25,6 +26,7 @@ public class Main {
         System.out.println("Press 2 for Binary search : ");
         System.out.println("Press 3 for Jump search : ");
         System.out.println("Press 4 for Interpolation search : ");
+        System.out.println("Press 5 for Exponential search : ");
         int option = scanner.nextInt();
         switch (option) {
             case 1:
@@ -89,6 +91,15 @@ public class Main {
                             System.out.println("Element is found : " + result);
                         break;
                 }
+                break;
+            case 5:
+                ExponentialSearch exponentialSearch = new ExponentialSearch();
+                Arrays.sort(array);
+                result = exponentialSearch.exponentialSearch(array, search, array.length);
+                if (result == -1) {
+                    System.out.println("Element not found!");
+                } else
+                    System.out.println("Element is found : " + result);
                 break;
         }
     }
