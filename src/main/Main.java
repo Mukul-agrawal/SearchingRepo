@@ -21,6 +21,7 @@ public class Main {
         int search = scanner.nextInt();
         System.out.println("Press 1 for Linear search : ");
         System.out.println("Press 2 for Binary search : ");
+        System.out.println("Press 3 for Jump search : ");
         int option = scanner.nextInt();
         switch (option) {
             case 1:
@@ -54,6 +55,8 @@ public class Main {
                 } else
                     System.out.println("Element is found : " + result);
                 break;
+            case 3:
+
         }
     }
 }
