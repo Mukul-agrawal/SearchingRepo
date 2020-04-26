@@ -22,4 +22,18 @@ public class InterpolationSearch {
         return -1;
     }
 
+    public int recursiveInterpolationSearch(int[] array, int target, int low, int high) {
+        int pos;
+        if (low <= high && target >= array[low] && target <= array[high]) {
+            pos = low + (((high - low) / (array[high] - array[low])) * (target - array[low]));
+            if (array[pos] == target)
+                return array[pos];
+            if (array[pos] < target)
+                return recursiveInterpolationSearch(array, target, pos + 1, high);
+            if (array[pos] > target)
+                return recursiveInterpolationSearch(array, target, pos + 1, high);
+        }
+        return -1;
+    }
+
 }

@@ -1,6 +1,7 @@
 package main;
 
 import binary.BinarySearch;
+import interpolation.InterpolationSearch;
 import jump.JumpSearch;
 import linear.LinearSearch;
 
@@ -23,6 +24,7 @@ public class Main {
         System.out.println("Press 1 for Linear search : ");
         System.out.println("Press 2 for Binary search : ");
         System.out.println("Press 3 for Jump search : ");
+        System.out.println("Press 4 for Interpolation search : ");
         int option = scanner.nextInt();
         switch (option) {
             case 1:
@@ -64,6 +66,29 @@ public class Main {
                     System.out.println("Element not found!");
                 } else
                     System.out.println("Element is found : " + result);
+                break;
+            case 4:
+                InterpolationSearch interpolationSearch = new InterpolationSearch();
+                Arrays.sort(array);
+                System.out.println("Press 1 for simple linear search : ");
+                System.out.println("Press 2 for recursive linear search : ");
+                int InterpolationOption = scanner.nextInt();
+                switch (InterpolationOption) {
+                    case 1:
+                        result = interpolationSearch.interpolationSearch(array, search);
+                        if (result == -1) {
+                            System.out.println("Element not found!");
+                        } else
+                            System.out.println("Element is found : " + result);
+                        break;
+                    case 2:
+                        result = interpolationSearch.recursiveInterpolationSearch(array, search, 0, array.length - 1);
+                        if (result == -1) {
+                            System.out.println("Element not found!");
+                        } else
+                            System.out.println("Element is found : " + result);
+                        break;
+                }
                 break;
         }
     }
