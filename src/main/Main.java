@@ -1,6 +1,7 @@
 package main;
 
 import binary.BinarySearch;
+import jump.JumpSearch;
 import linear.LinearSearch;
 
 import java.util.Arrays;
@@ -56,7 +57,15 @@ public class Main {
                     System.out.println("Element is found : " + result);
                 break;
             case 3:
-
+                JumpSearch jumpSearch = new JumpSearch();
+                Arrays.sort(array);
+                System.out.println(Arrays.toString(array));
+                result = jumpSearch.jumpSearch(array, search);
+                if (result == -1) {
+                    System.out.println("Element not found!");
+                } else
+                    System.out.println("Element is found : " + result);
+                break;
         }
     }
 }
