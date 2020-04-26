@@ -31,9 +31,8 @@ public class InterpolationSearch {
             if (array[pos] < target)
                 return recursiveInterpolationSearch(array, target, pos + 1, high);
             if (array[pos] > target)
-                return recursiveInterpolationSearch(array, target, pos + 1, high);
+                return recursiveInterpolationSearch(array, target, low, pos - 1);
         }
         return -1;
     }
-
 }

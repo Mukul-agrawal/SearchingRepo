@@ -70,8 +70,8 @@ public class Main {
             case 4:
                 InterpolationSearch interpolationSearch = new InterpolationSearch();
                 Arrays.sort(array);
-                System.out.println("Press 1 for simple linear search : ");
-                System.out.println("Press 2 for recursive linear search : ");
+                System.out.println("Press 1 for simple interpolation search : ");
+                System.out.println("Press 2 for recursive interpolation search : ");
                 int InterpolationOption = scanner.nextInt();
                 switch (InterpolationOption) {
                     case 1:
