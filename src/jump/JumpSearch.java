@@ -11,8 +11,8 @@ public class JumpSearch {
             if (prev >= length) {
                 return -1;
             }
-
         }
+
         while (array[prev] < target) {
             if (prev == Math.min(step, length))
                 return -1;
