@@ -1,2 +1,2 @@
 # SearchingRepository for searching
-This repository contains Linear search and Binary search algorithm.
+This repository contains Linear search,Binary search,Exponential search,Interpolation search and Jump search algorithm.
